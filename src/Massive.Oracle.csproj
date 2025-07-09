@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>net9.0</TargetFramework>
-		<OutputType>Library</OutputType>
-		<Description>Micro ORM to query and manage data in Oracle</Description>
-	</PropertyGroup>
-	<ItemGroup>
-		<Compile Remove="Massive.MySql.cs" />
-		<Compile Remove="Massive.PostgreSQL.cs" />
-		<Compile Remove="Massive.Sqlite.cs" />
-		<Compile Remove="Massive.SqlServer.cs" />
-	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.7" />
-	</ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <Description>Micro ORM to query and manage data in Oracle</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Massive.MySql.cs" />
+    <Compile Remove="Massive.PostgreSQL.cs" />
+    <Compile Remove="Massive.Sqlite.cs" />
+    <Compile Remove="Massive.SqlServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" />
+  </ItemGroup>
 </Project>

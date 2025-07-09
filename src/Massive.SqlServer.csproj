@@ -1,27 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>net9.0</TargetFramework>
-		<OutputType>Library</OutputType>
-		<AssemblyTitle>Massive</AssemblyTitle>
-		<Product>Massive</Product>
-		<Copyright>Copyright © 2009-2016 various contributors</Copyright>
-		<AssemblyVersion>2.0.0.0</AssemblyVersion>
-		<FileVersion>2.0.16.0127</FileVersion>
-		<Description>Micro ORM to query and manage data in SQL Server</Description>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<Configuration>.NET 4.0+</Configuration>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<Configuration>.NET 4.0+</Configuration>
-	</PropertyGroup>
-	<ItemGroup>
-		<Compile Remove="Massive.MySql.cs" />
-		<Compile Remove="Massive.Oracle.cs" />
-		<Compile Remove="Massive.PostgreSQL.cs" />
-		<Compile Remove="Massive.Sqlite.cs" />
-	</ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.7" />
-	</ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <Description>Micro ORM to query and manage data in SQL Server</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Massive.MySql.cs" />
+    <Compile Remove="Massive.Oracle.cs" />
+    <Compile Remove="Massive.PostgreSQL.cs" />
+    <Compile Remove="Massive.Sqlite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" />
+  </ItemGroup>
 </Project>
